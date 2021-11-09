@@ -20,7 +20,7 @@
         this.setState({image: e.target.value})
     }   
     onChangeRating = (e) =>{
-        this.setState({rating: parseInt(e.target.value)})
+        this.setState({rating: e.target.value})
     }    
 
     onSubmit = (e) =>{
@@ -44,7 +44,7 @@
                             <input onChange={this.onChangeTitle} type="text" name="title" className="input" />
                         </p>
                         <p>
-                            <label>Nombre de imagen</label><br />
+                            <label>Nombre o ruta de imagen</label><br />
                             <input onChange={this.onChangeImage} type="text" name="image" className="input" />
                         </p>
                         <p>
